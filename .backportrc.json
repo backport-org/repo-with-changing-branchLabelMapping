@@ -1,0 +1,10 @@
+{
+  "repoOwner": "backport-org",
+  "repoName": "repo-with-changing-branchLabelMapping",
+  "targetBranchChoices": ["main", "8.3", "8.2"],
+  "targetPRLabels": ["backport"],
+  "branchLabelMapping": {
+    "^v8.4.0$": "main",
+    "^v(\\d+).(\\d+).\\d+$": "$1.$2",
+  }
+}
